@@ -49,7 +49,7 @@ module.exports = {
                         }
    
                    }).catch(console.error);
-                   message.react("✅")
+                   message.react("<a:astroz_success:839478588192718898>)
 
   },
 };
