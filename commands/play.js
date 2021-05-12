@@ -89,7 +89,7 @@ module.exports = {
             serverQueue.songs.push(song);
             let thing = new MessageEmbed()
                 .setAuthor("Song has been added to queue", "https://images-ext-1.discordapp.net/external/k3fef3p4I2XTIUN4tykUa_4XKHc_WHrG5-1uiKbJR98/https/cdn.discordapp.com/avatars/822294569223454740/06d90b47826d04bc369fef70fd8b515a.webp")
-                .setColor("YELLOW")
+                .setColor("#FF0000")
                 .addField("Name", song.title, true)
                 .addField("Duration", song.duration, true)
                 .addField("Requested by", `<@${message.author.id}>`, true)
