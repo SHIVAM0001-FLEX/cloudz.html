@@ -20,8 +20,8 @@ if(!serverQueue.connection.dispatcher)return
       serverQueue.playing = true;
       serverQueue.connection.dispatcher.resume();
       let xd = new MessageEmbed()
-      .setDescription("▶ Resumed the music for you!")
-      .setColor("YELLOW")
+      .setDescription("▶ Resumed the music !")
+      .setColor("#ff0000")
       .setTitle("Music has been Resumed!")
        
    return message.channel.send(xd).catch(err => console.log(err));
@@ -36,6 +36,6 @@ if(!serverQueue.connection.dispatcher)return
         message.client.queue.delete(message.guild.id);
         return sendError(`:notes: The player has stopped and the queue has been cleared.: ${error}`, message.channel);
       }
-    message.react("✅")
+    message.react("<a:astroz_success:839478588192718898>")
   },
 };
